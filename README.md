@@ -1,4 +1,5 @@
 ## Orange 搜索引擎
+![ha]("SHOT.png")
 状态：__(本地)开发刚开始__ -> 初步界面 -> 凑合着用 -> 完成(部署到服务器)
 
 
@@ -10,12 +11,15 @@
 练手项目。  
 不追求大而全，以机器的性能和存储量做不到  
 
-
+<br/>
 目前:  
-Ruby on Rails + MySQL  
+Ruby on Rails + MySQL + Nginx + Puma  
 
-### 先 link Nginx
+<br/>
+### Run
+
 ```
+
 sudo ln -s /home/a/Desktop/OneMachineSearch/config/local-nginx.conf  /etc/nginx/sites-enabled/www.orange.com
 
 sudo service nginx restart
@@ -29,8 +33,22 @@ rake db:migrate
 sudo puma -C config/local-puma.rb -e development
 
 localhost:8030
-http://192.168.1.136:8030/   # for outside VM
+http://192.168.1.136:8030/   # ifconfig
+
 '''
+
+<br/>
+### Recommended Reading
+
+
+
+
+
+
+
+
+
+
 
 
 
