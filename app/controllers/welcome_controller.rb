@@ -6,6 +6,7 @@ class WelcomeController < ApplicationController
   	# complex sh.t is here
 
   	searchword = params[:searchword]
-  	render :plain => searchword
+  	# render :plain => searchword
+  	render layout: false
   end
 end
